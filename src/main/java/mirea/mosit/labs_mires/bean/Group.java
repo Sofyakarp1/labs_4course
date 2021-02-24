@@ -1,10 +1,13 @@
 package mirea.mosit.labs_mires.bean;
 
-public class Subject {
-
+public class Group {
     private int id;
     private String name;
-    private String short_name;
+
+    public Group(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public int getId() {
         return id;
@@ -22,20 +25,11 @@ public class Subject {
         this.name = name;
     }
 
-    public String getShort_name() {
-        return short_name;
-    }
-
-    public void setShort_name(String short_name) {
-        this.short_name = short_name;
-    }
-
     @Override
     public String toString() {
-        return "Subject{" +
+        return "Group{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", short_name='" + short_name + '\'' +
                 '}';
     }
 }
